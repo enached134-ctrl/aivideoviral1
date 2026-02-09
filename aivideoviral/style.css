@@ -1,0 +1,124 @@
+/* Background mov tech animat */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #6a0dad 0%, #9b59b6 50%, #5f27cd 100%);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  color: #fff;
+}
+
+/* Gradient animat */
+@keyframes gradientMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Container cu overlay mai vizibil */
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(0,0,0,0.6); /* mai opac pentru text vizibil */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+/* Titlu și text */
+h1 { 
+  font-size: 24px; 
+  margin-bottom: 10px; 
+  color: #fff;
+}
+p { 
+  margin-bottom: 20px; 
+  color: #ddd;
+}
+.video-demo {
+  width: 200px;       /* lățimea dorită */
+  height: 350px;      /* mai mic decât 9:16, doar pentru demo */
+  margin: 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-demo iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/* Input / preview */
+input[type="file"], input[type="email"] {
+  display: block;
+  margin: 10px auto;
+  width: 90%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  z-index: 2;
+  position: relative;
+}
+
+.preview {
+  width: 90%;
+  max-width: 250px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 6px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Buton */
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  z-index: 2;
+  position: relative;
+}
+button:hover { background: #45a049; }
+
+/* Mesaj final */
+.success {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #00ff00;
+}
+
+/* Tutorial */
+.tutorial {
+  margin-top: 30px;
+  text-align: left;
+  background: rgba(0,0,0,0.5); /* overlay mai vizibil pentru text */
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.tutorial h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tutorial ol {
+  padding-left: 20px;
+}
+
+.tutorial li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
