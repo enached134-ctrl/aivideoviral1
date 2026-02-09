@@ -1,0 +1,42 @@
+<div class="container">
+  <!-- Titlu + descriere -->
+  <h1>AI Video Viral 🎬</h1>
+  <p>Transformă o poză într-un video viral pentru TikTok, Reels și Shorts!</p>
+
+  <!-- Video demo YouTube vertical 9:16 -->
+  <div class="video-demo">
+    <iframe width="100%" height="100%" 
+            src="https://www.youtube.com/embed/QXvkr3TBjmU" 
+            title="Video Demo" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Upload poză -->
+  <input type="file" id="userFile" accept="image/*" onchange="previewFile()">
+  <img id="preview" alt="Preview Poza" class="preview">
+
+  <!-- Email -->
+  <input type="email" id="userEmail" placeholder="Email">
+
+  <!-- Buton Plată simulată -->
+  <button onclick="submitForm()">Continuă → Plată securizată</button>
+
+  <!-- Tutorial pentru utilizatori -->
+  <div class="tutorial">
+    <h2>Cum funcționează:</h2>
+    <ol>
+      <li>Încarcă o poză folosind butonul de mai sus (tot corpul vizibil).</li>
+      <li>Introdu adresa ta de email.</li>
+      <li>Apasă pe „Continuă → Plată securizată”.</li>
+      <li>Veți primi video-ul pe email în maxim 24 de ore.</li>
+      <li>Distribuie clipul pe TikTok, Reels sau Shorts și devino viral! 🚀</li>
+    </ol>
+  </div>
+
+  <!-- Mesaj final -->
+  <div id="successMsg" class="success" style="display:none;">
+    ✅ Mulțumim! Video-ul tău va fi livrat pe email în maxim 24h.
+  </div>
+</div>
